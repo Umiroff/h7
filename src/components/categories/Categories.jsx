@@ -5,11 +5,15 @@ import '../categories/Categories.css'
 const Categories = () => {
     let {data, isLoading, isError } = useGetCategoryQuery()
     let [deleteCategory] = useDeleteCategoryMutation()
+    
+    const handleDelete = (id) => {
+        deleteCategory(id)
+    }
 
     let categories = data?.data?.map((el, inx)=> (
         <div key={el.id} className='cat_user'>
             <p>{inx + 1}. {el.title}</p>
-            <button>Delete</button>
+            <button onClick={() => handleDelete(el.id)}>Delete</button>
         </div>
     ))
 
