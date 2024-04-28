@@ -2,9 +2,35 @@
     width: 100%;
     height: 100%;
 }
+.cat_cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 50px;
+}
 .cat_user{
     width: 300px;
     height: 150px;
     border: 0.5px;
-    box-shadow: 10px 5px 5px blue;
+    box-shadow: 1px 5px 5px blue;
+    position: relative;
+}
+.cat_user p{
+    position: absolute;
+    font-size: 20px;
+    top: 10px;
+    left: 10px;
+}
+.cat_user button{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    border: 0px;
+    border-radius: 10px;
+    background: red;
+    color: white;
+    font-size: 15px;
 }

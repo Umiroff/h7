@@ -12,7 +12,7 @@ export const categoryApi = api.injectEndpoints({
     createCategory: build.mutation({
       query: (body) => ({
         url: '/category/create',
-        method: 'PATCH',
+        method: 'POST',
         body
       }),
       invalidatesTags: ['Category']

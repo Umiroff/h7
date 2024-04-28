@@ -22,7 +22,7 @@ const Categories = () => {
     <div className='cat'>
         {isLoading ? <h2>Loading...</h2> : <></>}
         
-        <div>
+        <div className='cat_cards'>
             {categories}
         </div>
     </div>

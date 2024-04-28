@@ -8,7 +8,7 @@ function SignUp() {
     let {data, isError} = useGetCategoryQuery()
     let [createCategory] = useCreateCategoryMutation()
 
-    let user = useRef()
+    const user = useRef()
 
     const handleUser = e => {
         e.preventDefault()
