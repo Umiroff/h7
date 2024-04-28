@@ -1,0 +1,10 @@
+.cat{
+    width: 100%;
+    height: 100%;
+}
+.cat_user{
+    width: 300px;
+    height: 150px;
+    border: 0.5px;
+    box-shadow: 10px 5px 5px blue;
+}
